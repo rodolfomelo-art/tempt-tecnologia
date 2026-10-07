@@ -234,8 +234,8 @@
     loop(st, () => {
       const t = (performance.now() - sceneT0) / 1000 + (reduce ? 2.5 : 0), { ctx, w, h } = st;
       ctx.clearRect(0, 0, w, h);
-      const wide = w > 760, s = Math.min(w * (wide ? .6 : 1), h) / 560 * (wide ? 1 : .8);
-      const cx = wide ? w * .7 : w / 2, cy = wide ? h * .5 : h * .3;
+      const wide = w > 760, s = Math.min(w * (wide ? .6 : 1), h) / 560 * (wide ? .72 : .6);
+      const cx = wide ? w - 210 * s - 24 : w / 2, cy = wide ? h * .5 : 125;
       ctx.save(); scenes[cur](ctx, t, cx, cy, s); ctx.restore();
     });
   })();
@@ -252,7 +252,8 @@
 
   /* ---------- UI ---------- */
   const header = $('.site-header');
-  const onScroll = () => header.classList.toggle('solid', scrollY > 40);
+  const fabEl = $('#wa-fab');
+  const onScroll = () => { header.classList.toggle('solid', scrollY > 40); fabEl.classList.toggle('show', scrollY > innerHeight * .6); };
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
   const burger = $('#burger'), nav = $('#nav');
