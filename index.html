@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tempt Tecnologia — Consultoria de TI</title>
+<meta name="description" content="Consultoria de TI para médias e grandes empresas: engenharia de software, dados e analytics, inteligência artificial, serviços gerenciados, alocação de talentos e qualificação em TI.">
+<meta name="theme-color" content="#0B1F3A">
+<link rel="icon" type="image/svg+xml" href="assets/simbolo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- Símbolo reutilizável (T desenhado como circuito + 2 pontos de conexão) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sym" viewBox="0 0 120 120">
+    <g transform="translate(60 60) scale(0.78) translate(-63.5 -63.5)">
+      <rect class="sym-t" x="26" y="30" width="58" height="14" rx="7"/>
+      <rect class="sym-t" x="49" y="30" width="14" height="46" rx="7"/>
+      <circle cx="94" cy="37" r="7" fill="#14B8A0"/>
+      <circle cx="56" cy="90" r="7" fill="#14B8A0"/>
+    </g>
+  </symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5" /><circle cx="12" cy="12" r="1.2" class="dot"/></symbol>
+  <symbol id="i-data" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/><circle cx="16" cy="8" r="1.4" class="dot"/></symbol>
+  <symbol id="i-ai" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="12" r="2.2" class="dot"/><path d="M7 6.5 17 11M7 17.5 17 13M5 8v8"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.2 7.8 8 9 4.8-1.2 8-4.5 8-9V6z"/><path d="m9 12 2.2 2.2L15.5 10" /></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="18" cy="9" r="2" class="dot"/><path d="M17 14.2c2.4.3 4 2.2 4 4.8"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.4 2.7 3 6 3s6-1.6 6-3v-4.5"/><circle cx="22" cy="14" r="1.2" class="dot"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+</svg>
+
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Tempt Tecnologia — início">
+      <span class="logo-mark"><svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="28" fill="#0B1F3A"/><use href="#sym" class="sym-on-navy"/></svg></span>
+      <span class="logo-words"><b>TEMPT</b><i>TECNOLOGIA</i></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#metodo">Como trabalhamos</a>
+      <a href="#cloud">Cloud</a>
+      <a href="#talentos">Talentos</a>
+      <a href="#academy">Qualificação</a>
+      <a href="#contato" class="btn btn-sm">Fale Conosco</a>
+    </nav>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="h-hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 id="h-hero">Tecnologia que transforma processos em <em>resultados</em>.</h1>
+      <p class="lead">Consultoria de TI para médias e grandes empresas. Construímos os sistemas, organizamos os dados, aplicamos IA, operamos a infraestrutura e formamos as pessoas, tudo sob o mesmo padrão técnico.</p>
+      <div class="cta-row">
+        <a href="#contato" class="btn btn-teal">Converse com um especialista <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a href="#servicos" class="btn btn-ghost">Conheça os serviços</a>
+      </div>
+    </div>
+  </div>
+  <ul class="hero-rail wrap" aria-label="Frentes de atuação">
+    <li><a href="#servicos" data-go="0"><svg class="ico"><use href="#i-code"/></svg>Engenharia de Software</a></li>
+    <li><a href="#servicos" data-go="1"><svg class="ico"><use href="#i-data"/></svg>Dados &amp; Analytics</a></li>
+    <li><a href="#servicos" data-go="2"><svg class="ico"><use href="#i-ai"/></svg>Soluções em IA</a></li>
+    <li><a href="#servicos" data-go="3"><svg class="ico"><use href="#i-shield"/></svg>Serviços Gerenciados</a></li>
+    <li><a href="#servicos" data-go="4"><svg class="ico"><use href="#i-people"/></svg>Alocação de Talentos</a></li>
+    <li><a href="#servicos" data-go="5"><svg class="ico"><use href="#i-cap"/></svg>Cursos e Qualificação</a></li>
+  </ul>
+</section>
+
+<!-- SETORES -->
+<section class="sectors" aria-label="Setores atendidos">
+  <div class="wrap">
+    <p class="years"><strong>+ de 10 anos</strong> de compromisso com a transformação tecnológica.</p>
+    <p class="sectors-intro">Sistemas personalizados para quem opera em escala:</p>
+    <ul class="sector-list">
+      <li>Comércio eletrônico</li><li>Indústria</li><li>Agronegócio</li><li>Área financeira</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="services" id="servicos" aria-labelledby="h-serv">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="h-serv">Seis frentes, uma só consultoria.</h2>
+      <p>Você pode contratar uma frente isolada ou combinar várias. O que muda é o escopo; o rigor de engenharia é o mesmo.</p>
+    </div>
+
+    <div class="svc-layout">
+      <div class="svc-tabs" role="tablist" aria-label="Serviços" aria-orientation="vertical">
+        <button role="tab" id="t0" aria-controls="p0" aria-selected="true"><svg class="ico"><use href="#i-code"/></svg><span>Engenharia de Software</span></button>
+        <button role="tab" id="t1" aria-controls="p0" aria-selected="false" tabindex="-1"><svg class="ico"><use href="#i-data"/></svg><span>Dados &amp; Analytics</span></button>
+        <button role="tab" id="t2" aria-controls="p0" aria-selected="false" tabindex="-1"><svg class="ico"><use href="#i-ai"/></svg><span>Soluções em IA</span></button>
+        <button role="tab" id="t3" aria-controls="p0" aria-selected="false" tabindex="-1"><svg class="ico"><use href="#i-shield"/></svg><span>Serviços Gerenciados de TI</span></button>
+        <button role="tab" id="t4" aria-controls="p0" aria-selected="false" tabindex="-1"><svg class="ico"><use href="#i-people"/></svg><span>Alocação de Talentos</span></button>
+        <button role="tab" id="t5" aria-controls="p0" aria-selected="false" tabindex="-1"><svg class="ico"><use href="#i-cap"/></svg><span>Cursos e Qualificação em TI</span></button>
+      </div>
+
+      <div class="svc-stage" id="p0" role="tabpanel" aria-live="polite">
+        <canvas id="svc-canvas" aria-hidden="true"></canvas>
+        <div class="svc-body">
+          <h3 id="svc-title"></h3>
+          <p id="svc-text" class="svc-text"></p>
+          <ul id="svc-list" class="svc-list"></ul>
+          <a href="#contato" class="svc-link" id="svc-cta">Solicitar proposta <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTODO -->
+<section class="method" id="metodo" aria-labelledby="h-met">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="h-met">Do problema ao sistema em produção, sem ruído no caminho.</h2>
+      <p>Cada projeto segue o mesmo fluxo. Você sempre sabe em que etapa está e o que vem a seguir.</p>
+    </div>
+    <ol class="flow" id="flow">
+      <li class="reveal"><span class="node"></span><h3>Diagnosticar</h3><p>Entendemos o processo, os sistemas legados e onde o tempo da sua equipe é perdido.</p></li>
+      <li class="reveal"><span class="node"></span><h3>Desenhar</h3><p>Arquitetura, escopo e prioridades definidos com você, com entregas curtas e verificáveis.</p></li>
+      <li class="reveal"><span class="node"></span><h3>Construir</h3><p>Desenvolvimento incremental, testes automatizados e revisão técnica em cada entrega.</p></li>
+      <li class="reveal"><span class="node"></span><h3>Operar</h3><p>Monitoramento, suporte e evolução contínua para o resultado continuar crescendo.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- TALENTOS -->
+<section class="talent" id="talentos" aria-labelledby="h-tal">
+  <div class="wrap split">
+    <div class="reveal">
+      <h2 id="h-tal">Profissionais certos, dentro do seu time.</h2>
+      <p class="big">Quando o projeto precisa de mais braços, alocamos especialistas ou formamos squads completos que se integram à sua rotina, com a gestão técnica da Tempt por trás.</p>
+      <a href="#contato" class="btn">Montar meu time <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+    <ul class="roles reveal" aria-label="Perfis disponíveis">
+      <li>Desenvolvimento Back-end e Front-end</li>
+      <li>Engenharia e Ciência de Dados</li>
+      <li>Especialistas em IA e Machine Learning</li>
+      <li>DevOps, SRE e arquitetos AWS, Azure, GCP e OCI</li>
+      <li>QA e Automação de Testes</li>
+      <li>Líderes técnicos e Arquitetos</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CLOUD -->
+<section class="cloud" id="cloud" aria-labelledby="h-cloud">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="h-cloud">Multicloud: a nuvem certa para cada carga de trabalho.</h2>
+      <p>Projetamos, migramos e operamos ambientes nas quatro principais nuvens públicas, com foco em segurança, custo sob controle e portabilidade.</p>
+    </div>
+    <ul class="cloud-list">
+      <li class="reveal"><h3>AWS</h3><p>Amazon Web Services. Aplicações escaláveis, serverless, containers e análise de dados em larga escala.</p><ul class="chips"><li>Migração</li><li>Serverless</li><li>FinOps</li></ul></li>
+      <li class="reveal"><h3>Azure</h3><p>Microsoft Azure. Integração natural com o ecossistema Microsoft, identidade corporativa e ambientes híbridos.</p><ul class="chips"><li>Ambientes híbridos</li><li>Identidade</li><li>DevOps</li></ul></li>
+      <li class="reveal"><h3>GCP</h3><p>Google Cloud Platform. Plataforma de dados, BigQuery, Kubernetes e serviços de IA e machine learning.</p><ul class="chips"><li>Dados &amp; IA</li><li>Kubernetes</li><li>BigQuery</li></ul></li>
+      <li class="reveal"><h3>OCI</h3><p>Oracle Cloud Infrastructure. Cargas críticas, bancos Oracle e alto desempenho com custo previsível.</p><ul class="chips"><li>Bancos Oracle</li><li>Alta performance</li><li>Cargas críticas</li></ul></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ACADEMY -->
+<section class="academy" id="academy" aria-labelledby="h-acad">
+  <div class="wrap split">
+    <div class="academy-art reveal" aria-hidden="true"><canvas id="acad-canvas"></canvas></div>
+    <div class="reveal">
+      <h2 id="h-acad">Qualificação em TI para quem constrói e para quem decide.</h2>
+      <p class="big">Cursos e trilhas práticas, conduzidos por quem está em projeto todos os dias. Para profissionais em formação e para equipes de empresas que precisam evoluir juntas.</p>
+      <ul class="tags" aria-label="Trilhas">
+        <li>Desenvolvimento de Software</li><li>Dados &amp; BI</li><li>Inteligência Artificial</li><li>Cloud: AWS, Azure, GCP e OCI</li><li>Segurança da Informação</li><li>Turmas in company</li>
+      </ul>
+      <a href="#contato" class="btn btn-teal">Quero saber mais <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCÍPIOS -->
+<section class="principles" aria-labelledby="h-pri">
+  <div class="wrap">
+    <h2 id="h-pri" class="sr">Como a Tempt trabalha</h2>
+    <dl class="pri-list">
+      <div class="reveal"><dt>Clareza primeiro.</dt><dd>O objetivo do projeto vem antes da tecnologia. Se não melhora um resultado, não entra no escopo.</dd></div>
+      <div class="reveal"><dt>Sem caixa-preta.</dt><dd>Código, documentação e decisões ficam com você. Stack aberta sempre que possível.</dd></div>
+      <div class="reveal"><dt>Entrega que se mede.</dt><dd>Metas combinadas no início e acompanhadas até o fim, sem promessas genéricas.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact" id="contato" aria-labelledby="h-con">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <h2 id="h-con">Qual processo da sua empresa deveria render mais?</h2>
+      <p class="big">Conte o desafio. Um especialista da Tempt responde com os próximos passos, sem compromisso.</p>
+      <p class="contact-mail">contato@tempttecnologia.com.br</p>
+    </div>
+    <form class="form reveal" id="form" novalidate>
+      <label>Nome<input name="nome" autocomplete="name" required></label>
+      <label>E-mail corporativo<input name="email" type="email" autocomplete="email" required></label>
+      <label>Empresa<input name="empresa" autocomplete="organization"></label>
+      <label>Interesse
+        <select name="interesse">
+          <option>Engenharia de Software</option><option>Dados &amp; Analytics</option><option>Soluções em IA</option>
+          <option>Serviços Gerenciados de TI</option><option>Alocação de Talentos</option><option>Cursos e Qualificação</option>
+        </select>
+      </label>
+      <label class="full">Como podemos ajudar?<textarea name="msg" rows="4" required></textarea></label>
+      <div class="hp" aria-hidden="true"><label>Não preencha<input name="site" tabindex="-1" autocomplete="off"></label></div>
+      <label class="full check"><input type="checkbox" name="consent" required><span>Concordo com o uso dos meus dados para retorno do contato, conforme a <a href="politica-de-privacidade.html">Política de Privacidade</a>.</span></label>
+      <div class="full form-foot">
+        <button class="btn btn-teal" type="submit">Enviar mensagem <svg class="ico"><use href="#i-arrow"/></svg></button>
+        <p id="form-status" role="status"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <a class="logo logo-light" href="#top" aria-label="Tempt Tecnologia">
+      <span class="logo-mark"><svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="28" fill="#fff"/><use href="#sym" class="sym-on-white"/></svg></span>
+      <span class="logo-words"><b>TEMPT</b><i>TECNOLOGIA</i></span>
+    </a>
+    <nav class="legal-links" aria-label="Documentos legais"><a href="politica-de-privacidade.html">Política de Privacidade</a><a href="politica-de-cookies.html">Política de Cookies</a></nav>
+    <p class="copy">© <span id="year">2026</span> Todos os direitos reservados a Tempt Tecnologia LTDA</p>
+  </div>
+</footer>
+
+<a class="wa-fab" id="wa-fab" href="#contato" aria-label="Falar com a Tempt">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5z"/><path d="M9 9.2c.3 2.3 2.5 4.5 4.8 4.8l1.2-1.2-1.9-.9-.8.6a4 4 0 0 1-1.8-1.8l.6-.8-.9-1.9z"/></svg>
+  <span>WhatsApp</span>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>
