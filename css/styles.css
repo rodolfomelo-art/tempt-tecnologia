@@ -201,7 +201,8 @@ section{position:relative}
 .site-footer{background:var(--brand-navy);color:#fff;padding:56px 0}
 .foot{display:flex;align-items:center;justify-content:space-between;gap:var(--space-6) var(--space-8);flex-wrap:wrap}
 .foot p{color:var(--navy-text);font-size:14px}
-.foot .copy{font-size:13px}
+.foot .copy{display:grid;gap:4px}
+.foot .copy p{font-size:13px;line-height:20px}
 .legal-links{display:flex;gap:var(--space-6);flex-wrap:wrap}
 .legal-links a{font-size:14px;color:var(--navy-text);text-underline-offset:4px}
 .legal-links a:hover{color:#fff}
