@@ -274,13 +274,17 @@
   let api = { form: false, whatsapp: null };
   fetch('/api/config').then(r => r.ok ? r.json() : Promise.reject()).then(cfg => {
     api = cfg;
-    if (cfg.whatsapp) {
+    if (cfg.whatsapp) setFab(cfg.whatsapp);
+  }).catch(() => {});
+  function setFab(num) {
+    {
       const fab = $('#wa-fab');
-      fab.href = `https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent('Olá! Vim pelo site da Tempt Tecnologia e gostaria de falar com um especialista.')}`;
+      fab.href = `https://wa.me/${num}?text=${encodeURIComponent('Olá! Vim pelo site da Tempt Tecnologia e gostaria de falar com um especialista.')}`;
       fab.target = '_blank'; fab.rel = 'noopener';
       fab.setAttribute('aria-label', 'Falar com a Tempt pelo WhatsApp');
     }
-  }).catch(() => {});
+  }
+  setFab('5511930966070');
 
   /* ---------- formulário ---------- */
   const form = $('#form'), status = $('#form-status'), submit = $('button[type=submit]', form);
